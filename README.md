@@ -265,4 +265,4 @@ MIT License — bebas digunakan dan dimodifikasi untuk event CTF sendiri.
 
 ---
 
-> Dibuat dengan ❤️ dari CCUG — GCW 4.0
+> Dibuat dengan ❤️ dari CCUG — GCW 2026
