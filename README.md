@@ -4,7 +4,7 @@ Bot Discord untuk kompetisi CTF (Capture The Flag) yang terintegrasi dengan **CT
 
 ---
 
-## ✨ Fitur
+## Fitur
 
 - 🩸 **First Blood** — Mengumumkan peserta pertama yang berhasil solve setiap challenge
 - ✅ **Notifikasi Solve** — Memberitahu channel setiap kali ada challenge yang berhasil di-solve
@@ -17,7 +17,7 @@ Bot Discord untuk kompetisi CTF (Capture The Flag) yang terintegrasi dengan **CT
 
 ---
 
-## 📋 Persyaratan
+## Persyaratan
 
 - Python **3.10** atau lebih baru
 - Instance **CTFd** dengan dukungan webhook
@@ -26,7 +26,7 @@ Bot Discord untuk kompetisi CTF (Capture The Flag) yang terintegrasi dengan **CT
 
 ---
 
-## 🚀 Cara Penggunaan
+## Cara Penggunaan
 
 ### 1. Clone Repository
 
@@ -84,7 +84,7 @@ python main.py
 
 ---
 
-## ⚙️ Referensi Environment Variables
+## Referensi Environment Variables
 
 | Variabel | Wajib | Default | Keterangan |
 |---|---|---|---|
@@ -96,7 +96,7 @@ python main.py
 
 ---
 
-## 🔧 Setup Bot Discord
+## Setup Bot Discord
 
 ### Membuat Bot
 
@@ -127,7 +127,7 @@ python main.py
 
 ---
 
-## 🔗 Setup Webhook di CTFd
+## Setup Webhook di CTFd
 
 Bot ini membuka endpoint webhook di:
 
@@ -173,7 +173,7 @@ Bot mengharapkan struktur JSON berikut dari CTFd:
 
 ---
 
-## 💬 Perintah Bot
+## Perintah Bot
 
 | Perintah | Permission | Keterangan |
 |---|---|---|
@@ -182,7 +182,7 @@ Bot mengharapkan struktur JSON berikut dari CTFd:
 
 ---
 
-## 🖥️ CLI Sender
+## CLI Sender
 
 Selama bot berjalan, kamu bisa mengetik perintah langsung di terminal:
 
@@ -201,7 +201,7 @@ CMD > rules
 
 ---
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 ctf-discord-bot/
@@ -213,7 +213,7 @@ ctf-discord-bot/
 
 ---
 
-## 🐳 Menjalankan dengan Docker (Opsional)
+## Menjalankan dengan Docker (Opsional)
 
 Buat file `Dockerfile`:
 
@@ -237,7 +237,7 @@ docker run --env-file .env ctf-discord-bot
 
 ---
 
-## 🔒 Catatan Keamanan
+## Catatan Keamanan
 
 - **Jangan pernah commit file `.env` ke GitHub.** Tambahkan ke `.gitignore`:
   ```
@@ -253,13 +253,13 @@ docker run --env-file .env ctf-discord-bot
 
 ---
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Pull request sangat disambut! Untuk perubahan besar, harap buka issue terlebih dahulu untuk mendiskusikan apa yang ingin kamu ubah.
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 MIT License — bebas digunakan dan dimodifikasi untuk event CTF sendiri.
 
