@@ -144,9 +144,6 @@ async def poll_ctfd_solves():
 
                         log(f"FIRST BLOOD -> {cname} by {username}")
 
-                    else:
-                        await channel.send(f"✅ **{username}** solved **{cname}**")
-
                 await asyncio.sleep(5)
 
             except Exception as e:
@@ -265,8 +262,6 @@ async def send_rules(ctx):
         ),
         color=discord.Color.blue(),
     )
-
-    embed.set_footer(text="GCW CTF BOT")
 
     view = ParticipantView()
 
