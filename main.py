@@ -243,17 +243,27 @@ async def ping_command(ctx):
 async def send_rules(ctx):
 
     embed = discord.Embed(
-        title="📜 CTF Rules",
+        title="📜 CTF GCW Rules",
         description=(
-            "1. Dilarang sharing flag atau bekerja sama dengan tim lain\n"
-            "2. Dilarang brute force berlebihan\n"
-            "3. Tidak boleh menyerang infrastruktur\n"
-            "4. Gunakan AI secara bijak\n"
-            "5. Semua aktivitas dimonitor\n\n"
-            "Klik tombol di bawah untuk join!"
+            "• Dilarang sharing flag atau bekerja sama dengan tim lain\n"
+            "• Dilarang melakukan brute force berlebihan / spam submission\n"
+            "• Tidak diperbolehkan menggunakan automated tools "
+            "(nmap, sqlmap, dirbuster, dll)\n"
+            "• Dilarang melakukan serangan ke infrastruktur "
+            "(DDoS, overload, dll)\n"
+            "• Dilarang merusak challenge atau mengganggu peserta lain\n"
+            "• Tidak boleh flag hoarding (menahan flag)\n"
+            "• Gunakan AI/tools hanya sebagai referensi, bukan solusi instan\n"
+            "• Wajib menjaga sportivitas & etika selama kompetisi\n"
+            "• Semua aktivitas akan dimonitor oleh panitia\n"
+            "• Pelanggaran akan berujung diskualifikasi\n\n"
+            "Klik tombol di bawah untuk join sebagai participant!"
         ),
         color=discord.Color.blue(),
+        timestamp=datetime.now(timezone.utc),
     )
+
+    embed.set_footer(text="GCW CTF BOT")
 
     view = ParticipantView()
 
