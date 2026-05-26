@@ -189,36 +189,6 @@ async def cli_sender():
 
                 log("Sent embed message")
 
-            elif cmd == "rules":
-                embed = discord.Embed(
-                    title="📜 CTF GCW Rules",
-                    description=(
-                        "1. Dilarang sharing flag atau bekerja sama dengan tim lain\n"
-                        "2. Dilarang melakukan brute force berlebihan / spam submission\n"
-                        "3. Tidak diperbolehkan menggunakan automated tools "
-                        "(nmap, sqlmap, dirbuster, dll)\n"
-                        "4. Dilarang melakukan serangan ke infrastruktur "
-                        "(DDoS, overload, dll)\n"
-                        "5. Dilarang merusak challenge atau mengganggu peserta lain\n"
-                        "6. Tidak boleh flag hoarding (menahan flag)\n"
-                        "7. Gunakan AI/tools hanya sebagai referensi, bukan solusi instan\n"
-                        "8. Wajib menjaga sportivitas & etika selama kompetisi\n"
-                        "9. Semua aktivitas akan dimonitor oleh panitia\n"
-                        "10. Pelanggaran akan berujung diskualifikasi\n\n"
-                        "Klik tombol di bawah untuk join sebagai participant!"
-                    ),
-                    color=discord.Color.blue(),
-                )
-
-                view = ParticipantView()
-
-                await channel.send(embed=embed, view=view)
-
-                log("Sent rules panel")
-
-        except Exception as e:
-            log(f"CLI Error: {e}")
-
 
 # ================= COMMANDS =================
 @client.command(name="status")
@@ -252,6 +222,21 @@ async def status_command(ctx):
 
     await ctx.send(embed=embed)
 
+@client.command(name="ping")
+async def ping_command(ctx):
+
+    latency = round(client.latency * 1000)
+
+    embed = discord.Embed(
+        title="🏓 Pong!",
+        description=f"Latency: `{latency}ms`",
+        color=discord.Color.green(),
+        timestamp=datetime.now(timezone.utc),
+    )
+
+    embed.set_footer(text="GCW CTF BOT")
+
+    await ctx.reply(embed=embed)
 
 @client.command(name="sendrules")
 @commands.has_permissions(administrator=True)
