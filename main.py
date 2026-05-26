@@ -188,6 +188,8 @@ async def cli_sender():
                 await channel.send(embed=embed)
 
                 log("Sent embed message")
+        except Exception as e:
+            log(f"CLI Error: {e}")
 
 
 # ================= COMMANDS =================
@@ -222,6 +224,7 @@ async def status_command(ctx):
 
     await ctx.send(embed=embed)
 
+
 @client.command(name="ping")
 async def ping_command(ctx):
 
@@ -237,6 +240,7 @@ async def ping_command(ctx):
     embed.set_footer(text="GCW CTF BOT")
 
     await ctx.reply(embed=embed)
+
 
 @client.command(name="sendrules")
 @commands.has_permissions(administrator=True)
@@ -280,7 +284,7 @@ async def on_ready():
 
     activity = discord.Activity(
         type=discord.ActivityType.watching,
-        name="Watching GCW 4.0",
+        name="Watching GCW 2.0",
     )
 
     await client.change_presence(
