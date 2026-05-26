@@ -264,7 +264,6 @@ async def send_rules(ctx):
             "Klik tombol di bawah untuk join sebagai participant!"
         ),
         color=discord.Color.blue(),
-        timestamp=datetime.now(timezone.utc),
     )
 
     embed.set_footer(text="GCW CTF BOT")
