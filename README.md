@@ -1,4 +1,4 @@
-# 🤖 GCW Discord CTF Bot Realtime - Firstblook Notifier
+# GCW Discord CTF Bot Realtime - Firstblook Notifier
 
 Bot Discord sederhana untuk integrasi dengan CTFd.
 
